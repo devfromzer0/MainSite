@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;800;900&family=Pixelify+Sans:wght@400;700&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+  transition: 300ms;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #512174, #4c1f6c, #461c65, #411a5d, #3c1856, #391955, #351a55, #321b54, #2f2059, #2b245f, #272964, #212d69);
+  font-family: "Montserrat", sans-serif;
+  color: #D0D0D0;
+}
+body header {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+}
+body header h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: "Pixelify Sans", cursive;
+}
+body header ul {
+  display: flex;
+  gap: 3rem;
+}
+body header ul li {
+  text-decoration: none;
+}
+body header ul li * {
+  color: #D0D0D0;
+}
+body header ul li *:hover {
+  color: #fcc938;
+}
+body header ul li:hover {
+  transform: scale(1.15);
+  color: #fcc938;
+}
+body header div a {
+  color: #D0D0D0;
+  padding: 0.5rem;
+  border: #D0D0D0 solid 2px;
+  border-radius: 0.5rem;
+}
+body header div a:hover {
+  color: #fcc938;
+  border-color: #fcc938;
+}/*# sourceMappingURL=style.css.map */

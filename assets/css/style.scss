@@ -1,0 +1,62 @@
+@import './components/variables';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;800;900&family=Pixelify+Sans:wght@400;700&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    transition: 300ms;
+}
+
+body {
+    height: 100vh;
+    background-image: $purple-grd;
+    font-family: $standard;
+    color: $white;
+
+    header {
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: transparent;
+
+        h2 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-family: $pixel;
+        }
+
+        ul {
+            display: flex;
+            gap: 3rem;
+
+            li {
+                text-decoration: none;
+                *{
+                    color: $white;
+
+                        &:hover {
+                        color: $yellow;
+                    }
+                }
+                
+                &:hover {
+                    transform: scale(1.15);
+                    color: $yellow;
+                }
+            }
+        }
+
+        div {
+            a{
+                color: $white;
+                padding: 0.5rem;
+                border: $white solid 2px;
+                border-radius: 0.5rem;
+                &:hover {
+                        color: $yellow;
+                        border-color: $yellow;
+                    }
+            }
+        }
+    }
+}
