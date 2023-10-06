@@ -10,10 +10,7 @@
         text-transform: uppercase;
         font-family: $pixel;
         
-        &:hover {
-            cursor: pointer;
-            transform: scale(1.05);
-        }
+        @include contrast-hover (pointer)
     }
 
     &__nav {
@@ -24,11 +21,11 @@
         
                 &__item {
                     text-decoration: none;
-                    @include hover ($yellow, $yellow, transparent);
+                    @include link-hover ($yellow, $yellow, transparent);
         
                     a {
                         color: $white;
-                        @include hover ($yellow, $yellow, transparent);
+                        @include link-hover ($yellow, $yellow, transparent);
                     }
                 }
             }
@@ -36,11 +33,11 @@
 
     button {
         @include button-style ($standard, $white, $white, transparent);
-        @include hover ($yellow, $yellow, $dark-purple);
+        @include link-hover ($yellow, $yellow, $dark-purple);
         
         a {
             color: $white;
-            @include hover ($yellow, $yellow, transparent);
+            @include link-hover ($yellow, $yellow, transparent);
         }
     }
 }

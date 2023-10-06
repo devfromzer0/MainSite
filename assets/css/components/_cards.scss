@@ -1,0 +1,29 @@
+.cards_container {
+    margin: 5rem 10rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 3rem;
+
+    .card {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        background-color: $light-navy;
+        border: transparent solid 3px;
+        border-radius: 0.5rem;
+        padding: 2rem;
+
+        @include contrast-hover (default);
+
+        &__header {
+            font-size: 1.4rem;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        &__text {
+            text-align: center;
+            line-height: 1.1rem;
+        }
+    }
+}

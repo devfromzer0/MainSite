@@ -13,7 +13,8 @@
 }
 .header__title:hover {
   cursor: pointer;
-  transform: scale(1.05);
+  transform: scale(1.025);
+  filter: contrast(1.25);
 }
 .header__nav .list {
   display: flex;
@@ -23,6 +24,7 @@
   text-decoration: none;
 }
 .header__nav .list__item:hover {
+  cursor: pointer;
   transform: scale(1.15);
   color: #fcc938;
   border-color: #fcc938;
@@ -32,6 +34,7 @@
   color: #D0D0D0;
 }
 .header__nav .list__item a:hover {
+  cursor: pointer;
   transform: scale(1.15);
   color: #fcc938;
   border-color: #fcc938;
@@ -49,6 +52,7 @@
   background-color: transparent;
 }
 .header button:hover {
+  cursor: pointer;
   transform: scale(1.15);
   color: #fcc938;
   border-color: #fcc938;
@@ -58,10 +62,41 @@
   color: #D0D0D0;
 }
 .header button a:hover {
+  cursor: pointer;
   transform: scale(1.15);
   color: #fcc938;
   border-color: #fcc938;
   background-color: transparent;
+}
+
+.cards_container {
+  margin: 5rem 10rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 3rem;
+}
+.cards_container .card {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  background-color: #394db5;
+  border: transparent solid 3px;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+.cards_container .card:hover {
+  cursor: default;
+  transform: scale(1.025);
+  filter: contrast(1.25);
+}
+.cards_container .card__header {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+}
+.cards_container .card__text {
+  text-align: center;
+  line-height: 1.1rem;
 }
 
 * {

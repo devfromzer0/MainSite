@@ -1,6 +1,7 @@
 // colors
 $orange: #ef7d0c;
 $yellow: #fcc938;
+$translucid-yellow: rgba(252, 201, 56, 50%);
 $purple: #512174;
 $dark-purple: #35154d;
 $light-purple: #8333bf;
@@ -18,13 +19,22 @@ $standard: 'Montserrat', sans-serif;
 $pixel: 'Pixelify Sans', cursive;
 
 // hover condition
-@mixin hover ($text-color, $border-color, $bg-color) {
+@mixin link-hover ($text-color, $border-color, $bg-color) {
     &:hover {
+        cursor: pointer;
         transform: scale(1.15);
         color: $text_color;
         border-color: $border-color;
         background-color: $bg-color;
     }
+}
+
+@mixin contrast-hover ($cursor) {
+    &:hover {
+            cursor: $cursor;
+            transform: scale(1.025);
+            filter: contrast(1.25);
+        }
 }
 
 // button
