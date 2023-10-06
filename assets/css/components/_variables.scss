@@ -17,4 +17,25 @@ $purple-grd: linear-gradient(to bottom, #512174, #4c1f6c, #461c65, #411a5d, #3c1
 $standard: 'Montserrat', sans-serif;
 $pixel: 'Pixelify Sans', cursive;
 
-//animations
+// hover condition
+@mixin hover ($text-color, $border-color, $bg-color) {
+    &:hover {
+        transform: scale(1.15);
+        color: $text_color;
+        border-color: $border-color;
+        background-color: $bg-color;
+    }
+}
+
+// button
+@mixin button-style ($fontfamily, $txt-color, $outline-color, $bg-color) {
+        padding: 0.75rem 1.5rem;
+        font-family: $fontfamily;
+        font-weight: 500;
+        font-size: 1.1rem;
+        color: $txt-color;
+        text-transform: uppercase;
+        border: $outline-color solid 3px;
+        border-radius: 0.5rem;
+        background-color: $bg-color;
+    }

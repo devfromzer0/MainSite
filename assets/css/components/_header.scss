@@ -1,0 +1,46 @@
+.header {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+
+    &__title {
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-family: $pixel;
+        
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+    }
+
+    &__nav {
+
+        .list {
+            display: flex;
+            gap: 3rem;
+        
+                &__item {
+                    text-decoration: none;
+                    @include hover ($yellow, $yellow, transparent);
+        
+                    a {
+                        color: $white;
+                        @include hover ($yellow, $yellow, transparent);
+                    }
+                }
+            }
+        }
+
+    button {
+        @include button-style ($standard, $white, $white, transparent);
+        @include hover ($yellow, $yellow, $dark-purple);
+        
+        a {
+            color: $white;
+            @include hover ($yellow, $yellow, transparent);
+        }
+    }
+}
