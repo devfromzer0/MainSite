@@ -116,6 +116,38 @@
   line-height: 1.25em;
 }
 
+.footer {
+  display: flex;
+  gap: 2rem;
+  width: 100vw;
+  background-color: #35154d;
+  justify-content: center;
+  padding: 1.5rem 0;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+}
+.footer__list__title {
+  padding: 0.5rem 0;
+  font-weight: 600;
+}
+.footer__list__item {
+  padding: 0.25rem;
+  margin-left: 1rem;
+}
+.footer__list__item a {
+  color: #D0D0D0;
+}
+.footer__list__item a:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+  color: #fcc938;
+  border-color: #fcc938;
+  background-color: transparent;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
   transition: 300ms;
