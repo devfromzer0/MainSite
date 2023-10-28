@@ -1,6 +1,7 @@
 @import './components/variables';
 @import './components/header';
 @import './components/cards';
+@import './components/about';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;800;900&family=Pixelify+Sans:wght@400;700&display=swap');
 
 *{
@@ -9,7 +10,7 @@
 }
 
 body {
-    height: 100vh;
+    height: max-content;
     background-image: $purple-grd;
     font-family: $standard;
     color: $white;

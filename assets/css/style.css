@@ -99,13 +99,30 @@
   line-height: 1.1rem;
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 8rem;
+}
+.about__header {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+.about__paragraph {
+  padding: 1rem;
+  line-height: 1.25em;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
   transition: 300ms;
 }
 
 body {
-  height: 100vh;
+  height: max-content;
   background-image: linear-gradient(to bottom, #512174, #4c1f6c, #461c65, #411a5d, #3c1856, #391955, #351a55, #321b54, #2f2059, #2b245f, #272964, #212d69);
   font-family: "Montserrat", sans-serif;
   color: #D0D0D0;
