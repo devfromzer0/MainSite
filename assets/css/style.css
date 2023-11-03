@@ -148,6 +148,67 @@
   background-color: transparent;
 }
 
+.profiles {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 2rem;
+  padding: 2rem 4rem;
+}
+.profiles .profile {
+  display: grid;
+  grid-template-columns: auto;
+  align-content: start;
+  text-align: center;
+  background-color: #35154d;
+  padding: 1.5rem;
+}
+.profiles .profile__photo {
+  width: 2.5rem;
+  border: #222 3 px solid;
+  justify-self: center;
+  border-radius: 50%;
+}
+.profiles .profile__photo:hover {
+  cursor: default;
+  transform: scale(1.025);
+  filter: contrast(1.25);
+}
+.profiles .profile__nick {
+  font-size: 2rem;
+  font-family: "Pixelify Sans", cursive;
+}
+.profiles .profile__name {
+  font-size: 0.85rem;
+  font-style: italic;
+}
+.profiles .profile__description {
+  line-height: 1.25rem;
+  padding-top: 1rem;
+  text-align: justify;
+}
+.profiles .profile__github {
+  align-self: end;
+  justify-self: center;
+  margin-top: 2rem;
+  padding: 0.5rem 0.75rem;
+  width: max-content;
+  background-color: #222;
+  color: #D0D0D0;
+  border: transparent 3px solid;
+  display: flex;
+  gap: 0.5rem;
+}
+.profiles .profile__github img {
+  height: 1rem;
+}
+.profiles .profile__github:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+  color: #222;
+  border-color: #D0D0D0;
+  background-color: #222;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
   transition: 300ms;
@@ -158,4 +219,7 @@ body {
   background-image: linear-gradient(to bottom, #512174, #4c1f6c, #461c65, #411a5d, #3c1856, #391955, #351a55, #321b54, #2f2059, #2b245f, #272964, #212d69);
   font-family: "Montserrat", sans-serif;
   color: #D0D0D0;
+}
+body main {
+  min-height: 100vh;
 }/*# sourceMappingURL=style.css.map */

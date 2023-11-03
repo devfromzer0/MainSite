@@ -1,0 +1,59 @@
+.profiles {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
+    padding: 2rem 4rem;
+
+    .profile {
+        display: grid;
+        grid-template-columns: auto;
+        align-content: start;
+        text-align: center;
+        background-color: $dark-purple;
+        padding: 1.5rem;
+
+        &__photo {
+            width: 2.5rem;
+            border: $black 3    px solid;
+            justify-self: center;
+            border-radius: 50%;
+            @include contrast-hover (default)
+        }
+
+        &__nick {
+            font-size: 2rem;
+            font-family: $pixel;
+        }
+
+        &__name {
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+
+        &__description {
+            line-height: 1.25rem;
+            padding-top: 1rem;
+            text-align: justify;
+        }
+
+        &__github {
+            align-self: end;
+            justify-self: center;
+            margin-top: 2rem;
+            padding: 0.5rem 0.75rem;
+            width: max-content;
+            background-color: $black;
+            color: $white;
+            border: transparent 3px solid;
+            display: flex;
+            gap: 0.5rem;
+
+            img {
+                height: 1rem;
+            }
+
+            @include link-hover ($black, $white, $black)
+        }
+
+    }
+}
